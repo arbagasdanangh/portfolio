@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — A.R. Bagas Danang Haditio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom tweaks */
+    .glass { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <main class="min-h-screen flex items-center justify-center p-6">
+    <section class="max-w-4xl w-full bg-white rounded-2xl shadow-lg overflow-hidden grid md:grid-cols-3">
+      <!-- Left column: profile -->
+      <div class="p-8 md:col-span-1 flex flex-col items-center text-center bg-gradient-to-br from-sky-50 to-white">
+        <!-- Replace src with your real image path -->
+        <div class="w-40 h-40 rounded-full overflow-hidden ring-4 ring-slate-100 shadow-sm">
+          <img src="/mnt/data/552e0e51-4c65-4ddf-aa00-6691e7857a6d.png" alt="A.R. Bagas Danang Haditio" class="w-full h-full object-cover"/>
+        </div>
+        <h1 class="mt-4 text-2xl font-semibold">A.R. Bagas Danang Haditio</h1>
+        <p class="text-sm text-slate-500">arbagasdanangh</p>
+
+        <div class="mt-4 w-full">
+          <a href="mailto:arbagasdanangh@gmail.com" class="block text-sm text-slate-700">arbagasdanangh@gmail.com</a>
+          <a href="https://diamondproduction.esy.es" target="_blank" rel="noopener" class="block text-sm text-slate-700 truncate">diamondproduction.esy.es</a>
+          <p class="text-sm text-slate-700">WA: +62 822-2981-2795</p>
+        </div>
+
+        <div class="mt-6 w-full text-left">
+          <h3 class="text-sm font-medium text-slate-600">Pendidikan</h3>
+          <p class="mt-1 text-sm">S1 Sistem Informasi — Institut Bisnis dan Informatika Stikom Surabaya</p>
+          <p class="text-sm font-medium mt-1">Lulus: <span class="text-sky-600">2017</span></p>
+        </div>
+      </div>
+
+      <!-- Right column: content -->
+      <div class="p-8 md:col-span-2">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-semibold">Profil Profesional</h2>
+          <span class="text-sm text-slate-500">8 tahun pengalaman — DPMPTSP Kota Surabaya (2017–2025)</span>
+        </div>
+
+        <p class="mt-4 text-slate-700 leading-relaxed">Profesional IT berpengalaman dalam pengembangan aplikasi web dan mobile untuk layanan publik. Berfokus pada automasi proses perizinan, integrasi sistem antar-OPD, dan peningkatan pengalaman pengguna melalui solusi digital yang andal dan terukur.</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-sm font-medium text-slate-600">Pengalaman Kerja</h3>
+            <div class="mt-3 space-y-3 text-sm text-slate-700">
+              <div>
+                <strong>IT Developer & System Analyst</strong>
+                <div class="text-xs text-slate-500">DPMPTSP Kota Surabaya — 2017 &ndash; 2025</div>
+                <ul class="list-disc list-inside mt-2">
+                  <li>Mengembangkan aplikasi PHP untuk proses perizinan dan layanan internal.</li>
+                  <li>Membangun aplikasi mobile Android & iOS untuk akses layanan publik.</li>
+                  <li>Mendesain dan menerapkan RESTful API untuk integrasi antar OPD.</li>
+                  <li>Mengimplementasikan Sysflow untuk monitoring alur layanan dan audit.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-medium text-slate-600">Keahlian</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">PHP</span>
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">Android (Java/Kotlin)</span>
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">iOS (Xcode, Swift)</span>
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">API (RESTful)</span>
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">Sysflow</span>
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">MySQL / PostgreSQL</span>
+              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">Git & CI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h3 class="text-sm font-medium text-slate-600">Proyek Pilihan</h3>
+          <ol class="mt-3 text-sm space-y-2 list-decimal list-inside text-slate-700">
+            <li>Sistem Layanan Perizinan Internal (PHP + MySQL) — modul pendaftaran, verifikasi, dan monitoring.</li>
+            <li>Mobile App Pelayanan Publik — tracking perizinan & notifikasi (Android & iOS).</li>
+            <li>API Integrasi Antar-OPD — sinkronisasi data & otentikasi terpusat.</li>
+            <li>Dashboard Sysflow — visualisasi alur layanan dan laporan audit.</li>
+          </ol>
+        </div>
+
+        <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h4 class="text-sm font-medium text-slate-600">Tertarik bekerja sama?</h4>
+            <p class="text-sm text-slate-700">Kirim email atau hubungi WA untuk berdiskusi tentang proyek atau kolaborasi.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="mailto:arbagasdanangh@gmail.com" class="px-4 py-2 rounded-md border border-slate-200 text-sm">Email</a>
+            <a href="https://wa.me/6282229812795" target="_blank" rel="noopener" class="px-4 py-2 rounded-md bg-sky-600 text-white text-sm">Chat WA</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-xs text-slate-400 p-4">Generated portfolio — edit freely. Ganti foto dengan gambar asli bila perlu.</footer>
+</body>
+</html>
