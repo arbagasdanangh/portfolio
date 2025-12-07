@@ -6,100 +6,163 @@
   <title>Portfolio — A.R. Bagas Danang Haditio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Small custom tweaks */
-    .glass { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); }
+    .hero-bg {
+      background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 45%, #0f172a 100%);
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
-  <main class="min-h-screen flex items-center justify-center p-6">
-    <section class="max-w-4xl w-full bg-white rounded-2xl shadow-lg overflow-hidden grid md:grid-cols-3">
-      <!-- Left column: profile -->
-      <div class="p-8 md:col-span-1 flex flex-col items-center text-center bg-gradient-to-br from-sky-50 to-white">
-        <!-- Replace src with your real image path -->
-        <div class="w-40 h-40 rounded-full overflow-hidden ring-4 ring-slate-100 shadow-sm">
-          <img src="https://avatars.githubusercontent.com/u/25652372?v=4" alt="A.R. Bagas Danang Haditio" class="w-full h-full object-cover"/>
-        </div>
-        <h1 class="mt-4 text-2xl font-semibold">A.R. Bagas Danang Haditio</h1>
-        <p class="text-sm text-slate-500">arbagasdanangh</p>
-
-        <div class="mt-4 w-full">
-          <a href="mailto:arbagasdanangh@gmail.com" class="block text-sm text-slate-700">arbagasdanangh@gmail.com</a>
-          <a href="https://diamondproduction.esy.es" target="_blank" rel="noopener" class="block text-sm text-slate-700 truncate">diamondproduction.esy.es</a>
-          <p class="text-sm text-slate-700">WA: +62 822-2981-2795</p>
-        </div>
-
-        <div class="mt-6 w-full text-left">
-          <h3 class="text-sm font-medium text-slate-600">Pendidikan</h3>
-          <p class="mt-1 text-sm">S1 Sistem Informasi — Institut Bisnis dan Informatika Stikom Surabaya</p>
-          <p class="text-sm font-medium mt-1">Lulus: <span class="text-sky-600">2017</span></p>
-        </div>
+<body class="bg-slate-100 text-slate-800">
+  <!-- HERO HEADER -->
+  <header class="hero-bg text-white py-16 px-6 shadow-lg">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+      <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <img src="https://avatars.githubusercontent.com/u/25652372?v=4" class="w-40 h-40 rounded-full border-4 border-white shadow-xl" />
+        <h1 class="text-3xl font-bold mt-4">A.R. Bagas Danang Haditio</h1>
+        <p class="text-sky-200 text-sm">arbagasdanangh</p>
       </div>
 
-      <!-- Right column: content -->
-      <div class="p-8 md:col-span-2">
-        <div class="flex items-center justify-between">
-          <h2 class="text-xl font-semibold">Profil Profesional</h2>
-          <span class="text-sm text-slate-500">8 tahun pengalaman — DPMPTSP Kota Surabaya (2017–2025)</span>
-        </div>
+      <div class="md:col-span-2 mt-6 md:mt-0">
+        <h2 class="text-4xl font-semibold leading-tight">IT Developer & System Analyst</h2>
+        <p class="mt-3 text-sky-100 text-sm">8 tahun pengalaman — DPMPTSP Kota Surabaya (2017–2025)</p>
+      </div>
+    </div>
+  </header>
 
-        <p class="mt-4 text-slate-700 leading-relaxed">Profesional IT berpengalaman dalam pengembangan aplikasi web dan mobile untuk layanan publik. Berfokus pada automasi proses perizinan, integrasi sistem antar-OPD, dan peningkatan pengalaman pengguna melalui solusi digital yang andal dan terukur.</p>
+  <!-- MAIN CONTENT -->
+  <main class="max-w-5xl mx-auto p-6 -mt-10">
+    <section class="bg-white rounded-2xl shadow-xl p-10 border border-slate-200">
 
-        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <h3 class="text-sm font-medium text-slate-600">Pengalaman Kerja</h3>
-            <div class="mt-3 space-y-3 text-sm text-slate-700">
-              <div>
-                <strong>IT Developer & System Analyst</strong>
-                <div class="text-xs text-slate-500">DPMPTSP Kota Surabaya — 2017 &ndash; 2025</div>
-                <ul class="list-disc list-inside mt-2">
-                  <li>Mengembangkan aplikasi PHP untuk proses perizinan dan layanan internal.</li>
-                  <li>Membangun aplikasi mobile Android & iOS untuk akses layanan publik.</li>
-                  <li>Mendesain dan menerapkan RESTful API untuk integrasi antar OPD.</li>
-                  <li>Mengimplementasikan Sysflow untuk monitoring alur layanan dan audit.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <!-- PROFILE SUMMARY -->
+      <div>
+        <h2 class="text-2xl font-bold text-slate-700">Profil Profesional</h2>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Profesional IT berpengalaman dalam pengembangan aplikasi web dan mobile untuk layanan publik. Berfokus pada automasi proses perizinan, integrasi sistem antar-OPD, dan peningkatan pengalaman pengguna melalui solusi digital yang andal dan terukur.
+        </p>
+      </div>
 
-          <div>
-            <h3 class="text-sm font-medium text-slate-600">Keahlian</h3>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">PHP</span>
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">Android (Java/Kotlin)</span>
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">iOS (Xcode, Swift)</span>
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">API (RESTful)</span>
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">Sysflow</span>
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">MySQL / PostgreSQL</span>
-              <span class="px-3 py-1 text-sm bg-sky-100 rounded-full">Git & CI</span>
+      <!-- GRID 2 kolom -->
+      <div class="grid md:grid-cols-2 gap-10 mt-10">
+
+        <!-- EXPERIENCES -->
+        <div>
+          <h3 class="text-lg font-semibold text-slate-700">Pengalaman Kerja</h3>
+          <div class="mt-4 space-y-4">
+            <div class="border-l-4 border-sky-500 pl-4">
+              <strong class="text-slate-800">IT Developer & System Analyst</strong>
+              <div class="text-xs text-slate-500">DPMPTSP Kota Surabaya — 2017–2025</div>
+              <ul class="list-disc list-inside mt-2 text-slate-600 text-sm">
+                <li>Mengembangkan aplikasi PHP untuk proses perizinan dan layanan internal.</li>
+                <li>Membangun aplikasi mobile Android & iOS untuk akses layanan publik.</li>
+                <li>Mendesain dan menerapkan RESTful API untuk integrasi antar OPD.</li>
+                <li>Mengimplementasikan Sysflow untuk monitoring alur layanan dan audit.</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="mt-6">
-          <h3 class="text-sm font-medium text-slate-600">Proyek Pilihan</h3>
-          <ol class="mt-3 text-sm space-y-2 list-decimal list-inside text-slate-700">
-            <li>Sistem Layanan Perizinan Internal (PHP + MySQL) — modul pendaftaran, verifikasi, dan monitoring.</li>
-            <li>Mobile App Pelayanan Publik — tracking perizinan & notifikasi (Android & iOS).</li>
-            <li>API Integrasi Antar-OPD — sinkronisasi data & otentikasi terpusat.</li>
-            <li>Dashboard Sysflow — visualisasi alur layanan dan laporan audit.</li>
-          </ol>
-        </div>
-
-        <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <h4 class="text-sm font-medium text-slate-600">Tertarik bekerja sama?</h4>
-            <p class="text-sm text-slate-700">Kirim email atau hubungi WA untuk berdiskusi tentang proyek atau kolaborasi.</p>
-          </div>
-          <div class="flex gap-3">
-            <a href="mailto:arbagasdanangh@gmail.com" class="px-4 py-2 rounded-md border border-slate-200 text-sm">Email</a>
-            <a href="https://wa.me/6282229812795" target="_blank" rel="noopener" class="px-4 py-2 rounded-md bg-sky-600 text-white text-sm">Chat WA</a>
+        <!-- SKILLS -->
+        <div>
+          <h3 class="text-lg font-semibold text-slate-700">Keahlian</h3>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <span class="px-4 py-1 bg-slate-800 text-white rounded-full text-sm">PHP</span>
+            <span class="px-4 py-1 bg-sky-600 text-white rounded-full text-sm">Android (Java/Kotlin)</span>
+            <span class="px-4 py-1 bg-rose-600 text-white rounded-full text-sm">iOS (Xcode, Swift)</span>
+            <span class="px-4 py-1 bg-emerald-600 text-white rounded-full text-sm">RESTful API</span>
+            <span class="px-4 py-1 bg-violet-600 text-white rounded-full text-sm">Sysflow</span>
+            <span class="px-4 py-1 bg-orange-500 text-white rounded-full text-sm">MySQL / PostgreSQL</span>
+            <span class="px-4 py-1 bg-indigo-600 text-white rounded-full text-sm">Git & CI/CD</span>
           </div>
         </div>
-
       </div>
+
+      <!-- PROJECT LIST -->
+      <div class="mt-10">
+        <h3 class="text-lg font-semibold text-slate-700">Proyek Pilihan</h3>
+        <ul class="mt-4 space-y-3 text-slate-600 text-sm">
+          <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Sistem Layanan Perizinan Internal (PHP + MySQL) — pendaftaran, verifikasi, monitoring.</li>
+          <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Mobile App Pelayanan Publik (Android & iOS) — tracking & notifikasi perizinan.</li>
+          <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">API Integrasi Antar-OPD — sinkronisasi data dan otentikasi terpusat.</li>
+          <li class="bg-slate-50 border border-slate-200 rounded-lg p-4">Dashboard Sysflow — visualisasi alur layanan dan audit flow.</li>
+        </ul>
+      </div>
+
+      <!-- ACCORDION INFO -->
+<div class="mt-12 bg-slate-50 border border-slate-300 rounded-xl p-6">
+  <details class="p-4 bg-white rounded-lg shadow">
+    <summary class="cursor-pointer font-semibold text-lg">Tentang Portfolio Ini</summary>
+    <div class="mt-2 text-sm leading-relaxed text-slate-600">
+      Portfolio ini dirancang untuk menampilkan pengalaman, keterampilan, dan proyek terbaik dengan gaya yang bersih, profesional, dan mudah dibaca.
+    </div>
+  </details>
+</div>
+
+
+<!-- PORTFOLIO SEBELUMNYA -->
+<h2 class="text-2xl font-bold mt-10 mb-4">Portfolio Project IT Sebelumnya</h2>
+<div class="space-y-4" id="accordion-prev">
+  <details class="border rounded-xl p-4 bg-white shadow">
+    <summary class="cursor-pointer font-semibold text-lg">1. Aplikasi Pengolahan Data Pegawai Dinas Pendidikan Kab. Sidoarjo (2015)</summary>
+    <div class="mt-2 text-sm leading-relaxed">
+      <p><strong>Jenis:</strong> Individu</p>
+      <p><strong>Tujuan:</strong> Mengolah data pegawai dinas melalui website.</p>
+      <p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, Highcharts</p>
+      <p><strong>Keterangan:</strong> Aplikasi untuk pengolahan data pegawai, pangkat, jabatan, cuti, dan pensiun, dilengkapi laporan dan grafik.</p>
+    </div>
+  </details>
+
+  <details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">2. Aplikasi Pemasaran PT. Karya Perdana Kofienti (2015)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Pemasaran melalui website.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin</p><p><strong>Keterangan:</strong> Web pemasaran dengan dua user: admin dan user, pengelolaan data pemasaran.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">3. Web Profil SDN Made I Surabaya (2015)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Profil sekolah melalui website.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin</p><p><strong>Keterangan:</strong> Halaman user & admin untuk mengelola informasi sekolah.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">4. Web Profil PD BPR Bank Daerah Kab. Kediri (2015)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Profil lembaga.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin</p><p><strong>Keterangan:</strong> Website informasi bank daerah dengan panel admin.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">5. Web Data Antri Pasien – Puskesmas Blooto Mojokerto (2015)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Informasi antrian pasien.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, FPDF</p><p><strong>Keterangan:</strong> Mengurutkan antrian berdasarkan umur & panggilan pasien.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">6. Web Monitoring Kepuasan Pasien – Puskesmas Blooto (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Mengolah penilaian kepuasan pasien.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, Highcharts, FPDF</p><p><strong>Keterangan:</strong> Sistem penilaian oleh pasien & laporan grafik.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">7. Web Penjadwalan Dokter – Puskesmas Blooto (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Jadwal dokter untuk pasien.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, FPDF</p><p><strong>Keterangan:</strong> Admin & pasien memiliki halaman berbeda.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">8. Web Kontrol Berkas GAPENSI Jawa Timur (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Individu</p><p><strong>Tujuan:</strong> Kontrol keluar–masuk berkas.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, FPDF</p><p><strong>Keterangan:</strong> Mencatat berkas perusahaan & bidang usaha.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">9. Waroeng Angkringan SO Kofienti v2 (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Jenis:</strong> Team (dev tunggal)</p><p><strong>Tujuan:</strong> Menyempurnakan versi sebelumnya.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, FPDF</p><p><strong>Keterangan:</strong> Penyempurnaan desain & fitur.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">10. Aplikasi Data Pensiun — Dinas KOMINFO Jatim (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, PHPExcel, FPDF</p><p><strong>Keterangan:</strong> Menghitung perkiraan pensiun & pangkat, multi-user.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">11. SPK Lokasi Wisata Jawa Timur (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tujuan:</strong> Rekomendasi wisata berbasis fuzzy.</p><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, FPDF</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">12. Penilaian Kinerja Pegawai — Dinas KOMINFO Jatim (2016)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, PHPExcel, FPDF</p><p><strong>Keterangan:</strong> Penilaian SKP, perilaku kerja, multi-user.</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">13. Aplikasi Penyewaan Gedung — UPT Taman Budaya Jatim (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, Highcharts, FPDF</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">14. Web Profil SMPN 16 Surabaya (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">15. Web eProker Kominfo Pemkot Surabaya (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, Highcharts, FPDF</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">16. Web Perpustakaan SMKN 10 Surabaya (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, PHP, phpMyAdmin, Highcharts, FPDF</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">17. SPK Pemilihan Gedung — UPT Taman Budaya Jatim (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, CodeIgniter, PHP, Highcharts</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">18. Web Penilaian Kurikulum 2013 — SMP Al‑Islam Krian (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, CodeIgniter, PHP, DomPDF</p></div></details>
+
+<details class="border rounded-xl p-4 bg-white shadow"><summary class="cursor-pointer font-semibold text-lg">19. Website Pribadi — Company Profile (2017)</summary><div class="mt-2 text-sm leading-relaxed"><p><strong>Tech:</strong> Bootstrap, CodeIgniter, PHP, TCPDF</p></div></details>
+</div>
+
+
+<!-- CONTACT -->
+      <div class="mt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-slate-800 text-white rounded-xl p-6">
+        <div>
+          <h4 class="text-lg font-semibold">Tertarik bekerja sama?</h4>
+          <p class="text-slate-300 text-sm mt-1">Hubungi saya melalui email atau WhatsApp untuk kolaborasi proyek.</p>
+        </div>
+        <div class="flex gap-4">
+          <a href="mailto:arbagasdanangh@gmail.com" class="px-5 py-2 rounded-lg bg-white text-slate-800 text-sm font-semibold shadow">Email</a>
+          <a href="https://wa.me/6282229812795" target="_blank" class="px-5 py-2 rounded-lg bg-sky-500 text-white text-sm font-semibold shadow">Chat WA</a>
+        </div>
+      </div>
+
     </section>
   </main>
 
-  <footer class="text-center text-xs text-slate-400 p-4">Portfolio — A.R BAGAS DANANG HADITIO.</footer>
+  <footer class="text-center text-xs text-slate-400 py-6">© 2025 — Portfolio A.R. Bagas Danang Haditio</footer>
 </body>
 </html>
