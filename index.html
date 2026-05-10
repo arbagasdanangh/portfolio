@@ -94,8 +94,30 @@
 
   <!-- PROFILE SECTION -->
   <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg">
-    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/suroboyo-gak-tau-turu/6767186466"></iframe>
-    <h2 class="text-2xl font-bold mb-3">Profil Profesional</h2>
+   <div class="apple-music-container">
+  <iframe 
+    allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
+    frameborder="0" 
+    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+    src="https://embed.music.apple.com/us/song/suroboyo-gak-tau-turu/1767186466">
+  </iframe>
+</div>
+
+<style>
+  .apple-music-container {
+    width: 100%;
+    max-width: 660px; /* Batas maksimal lebar agar tidak terlalu melar */
+    margin: 0 auto;  /* Menengahkan player */
+  }
+
+  .apple-music-container iframe {
+    width: 100%;
+    height: 175px;   /* Tinggi standar untuk single track Apple Music */
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+  }
+</style><br> <h2 class="text-2xl font-bold mb-3">Profil Profesional</h2>
     <p class="leading-relaxed text-slate-700 dark:text-slate-300">
 
       Profesional IT berpengalaman dalam pengembangan aplikasi web dan mobile untuk layanan publik.
